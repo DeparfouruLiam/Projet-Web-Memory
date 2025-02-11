@@ -1,0 +1,126 @@
+@import 'header.css';
+@import 'main.css';
+@import 'footer.css';
+
+.list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.black_square {
+    width: clamp(100px, 40vw, 200px);
+    height: clamp(100px, 40vw, 200px);
+    background-color: #0e0b26;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    flex-direction: column;
+    margin: 10px auto;
+}
+
+.black_square img {
+    display: block;
+    margin: 0 auto;
+    height: 50%;
+    width: auto;
+}
+
+.black_square span {
+    display: block;
+    margin-top: 10px;
+}
+
+.input {
+    border: 1px solid #272645;
+    background-color: #272645;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.input_message {
+    border: 1px solid #272645;
+    background-color: #272645;
+    color: #ffffff;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    resize: none;
+    text-align: left;
+    height: 150px;
+}
+
+.input_message::placeholder {
+    text-align: left;
+    vertical-align: top;
+}
+
+.list2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.contact_box {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 15%;
+    margin-bottom: 30px;
+}
+
+.contact_box button {
+    background-color: #ec9224;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    float: right;
+}
+
+.contact_box button:hover {
+    background-color: #514e8c;
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+    .list {
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .black_square {
+        margin: 10px 0;
+        width: 70%;
+    }
+
+    .contact_box {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .list {
+        gap: 20px;
+    }
+
+    .black_square {
+        margin: 15px 0;
+        width: 80%;
+    }
+}

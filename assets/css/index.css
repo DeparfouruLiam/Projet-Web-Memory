@@ -1,0 +1,261 @@
+@import 'main.css';
+
+
+.Play {
+  background-image: url("../images/header.png");
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.Play .Bienvenue{
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+}
+.Play .play_button{
+  font-size: 50px;
+  text-align: center;background-color: orange;
+  border-radius: 10px;
+  transition: transform 0.2s;
+  margin :auto;
+  width:60%;
+  border: solid 5px darkorange;
+
+}
+.Play .play_button a{
+  color: #f4eeee;
+  text-decoration: none;
+  margin: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+
+}
+.Play .play_button:hover{
+  transform: scale(1.1);
+  background-color: darkorange;
+}
+
+
+
+
+
+.Rules{
+  text-align: center;
+}
+.Rules .Rules_ps{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Rules .Rules_ps .rules_nb{
+  font: 30px "Roboto", Impact;
+  color: darkslateblue;
+}
+.Rules .Rules_ps .rules_p{
+  margin: 0 10px 20px;
+  text-align: left;
+  width: 20vw;
+  max-width: 265px;
+}
+.Rules .Rules_ps .rules_p h6{
+  color: darkslateblue;
+  font-weight: bold;
+  font-size: 21px;
+  margin-bottom: 5px;
+}
+.Rules .Rules_ps .rules_p p{
+  font-size: 14px;
+}
+.Rules .rules_title{
+  background-color: darkslateblue;
+  border-radius: 30px;
+  font-size: 22px;
+  padding-top: 3px;
+  width: 70%;
+  margin: 10px auto;
+}
+.Rules .rules_img{
+  margin-bottom: 10px;
+}
+.Rules .Image_ex{
+  margin-top: 10px;
+  border: 1px solid white;
+}
+.Rules .Image_mem{
+  object-fit: cover;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.Rules .Image_trophee{
+  object-fit: cover;
+}
+.Stats .stats_title{
+  background-color: darkslateblue;
+  border-radius: 30px;
+  font-size: 22px;
+  text-align: center;
+  width: 70%;
+  margin: 10px auto;
+}
+
+
+
+.Stats .stats_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.Stats .stats-lr{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.Stats .stats_content .background  {
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+}
+.Stats .stats_content .big_img img{
+  border-radius: 10px;
+  margin: 7px;
+  border: 3px solid darkslateblue;
+}
+.Stats .stats_content .background img{
+  border-radius: 10px;
+  margin: 7px;
+  border: 3px solid darkslateblue;
+}
+.Stats .stats_content .statistique  {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 50px;
+  font-weight: bolder;
+  -webkit-text-stroke: 2px darkslateblue;
+}
+.Stats .stats_content .statistique p {
+  font-size: 25px;
+  color: white;
+  -webkit-text-stroke: 1px darkslateblue;
+}
+
+.team_title{
+  background-color: darkslateblue;
+  border-radius: 30px;
+  width: 70%;
+  margin: 10px auto;
+  font-size: 22px;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.team_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.name{
+  font-size: 20px;
+  margin: 5px;
+  text-align: center;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.work{
+  text-align: center;
+  font-size: 14px;
+  margin-top: 15px;
+  color: slategray;
+}
+.members img{
+  align-items: center;
+  border-radius: 50%;
+}
+.members{
+  margin: 10px 5px;
+  background-color: #0e0b26;
+  padding: 25px;
+  max-width: 300px;
+  border-radius: 1px;
+  justify-items: center;
+  min-width: 100px;
+  height: 220px;
+}
+.team_left, .team_right{
+  width: 210px;
+}
+
+.succesRegisterOn {
+  color : green;
+  display: block;
+  font-family: Arial;
+  font-size : 2.5rem;
+  display : flex;
+  justify-content: center;
+}
+
+.inactif {
+  display: none;
+}
+
+
+
+
+@media screen and (max-width: 767px){
+  .Rules .Rules_ps{
+    flex-direction: column;
+  }
+  .Rules .Rules_ps .rules_nb{
+    text-align: left;
+    margin-left: 10px;
+  }
+  .Rules .Rules_ps .rules_p{
+    width: 90vw;
+    max-width: 767px;
+  }
+  .Rules .Image_ex{
+    height: 180px;
+    width: 180px;
+  }
+  .Rules .Image_mem{
+    height: 180px;
+    width: 90px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  .Rules .Image_trophee{
+    height: 180px;
+    width: 90px;
+  }
+  .Stats .stats_content {
+    flex-direction: column;
+  }
+  .Stats .stats_content .big_img{
+    text-align: center;
+  }
+  .name{
+    font-size: 15px;
+  }
+  .work{
+    font-size: 12px;
+  }
+  .members img{
+    width: 105px;
+    height: 105px;
+  }
+  .members{
+    height: 170px;
+  }
+  .team_left, .team_right{
+    width: 180px;
+  }
+}

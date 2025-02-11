@@ -1,0 +1,116 @@
+
+@import 'main.css';
+
+
+body{
+    background-color:#0f042e;
+    color : white;
+    font-family: Arial, sans-serif;
+
+}
+
+.titleConnexion {
+    text-align: center;
+    font-size: 500%;
+    font-family: 'PoliceDesTitres', sans-serif;
+}
+.titleInscription {
+    text-align: center;
+    font-size:500%;
+    font-family: 'PoliceDesTitres', sans-serif;
+}
+.registerBox{
+    margin-left: 32%;
+    width : 35%;
+    padding: 1%;
+}
+
+button{
+    margin-left: 42.5%;
+    background-color: #e7af28;
+    box-sizing: border-box;
+    resize: none;
+    padding: 3%;
+    color : #FFF
+
+
+
+}
+
+input{
+    border: 0.5rem solid #0f042e;
+    display: flex;
+    flex-direction: column;
+    background-color: #3c3564;
+    width: 100%;
+    padding: 5%;
+    color: #888;
+
+}
+.registerBox{
+    width: 35%;
+    flex-direction: column;
+    margin-left: 34.5%;
+    margin: 30px auto;
+
+
+}
+
+@media (max-width: 600px) {
+    .registerBox{
+        width: 50%;
+        margin: 30px auto;
+        padding-right: 50px;
+    }
+    .list{
+      width: 50%;
+
+    }
+    .footer-section{
+      margin-left: 30%;
+    }
+    button{
+        flex-direction: column-reverse;
+        width: 50%;
+        padding: 2%;
+
+    }
+    input{
+        width: 110%;
+        flex-direction: column;
+    }
+}
+
+.active {
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+
+
+}
+.inactif {
+    display: none;
+}
+
+#progress-bar {
+    margin-left: 15%;
+    width: 80%;
+}
+
+#progress-bar.low {
+    accent-color: red;
+}
+
+#progress-bar.medium {
+    accent-color: orange;
+}
+
+#progress-bar.high {
+    accent-color: green;
+} 
+
+
+
+

@@ -1,0 +1,86 @@
+@import 'header.css';
+@import 'main.css';
+@import 'footer.css';
+
+body{
+    background-color:#0f042e;
+    color : white;
+
+}
+
+.titleConnexion {
+    text-align: center; /* on alligne les tire "Inscription" au centre */
+    font-size: 500%; /* on définit la taille du titre en pixel */
+    font-family: 'PoliceDesTitres', sans-serif; /* on join la police d'écriture au titre */
+}
+.titleInscription {
+    text-align: center; /* on alligne les tire "Inscription" au centre */
+    font-size:500%; /* on définit la taille du titre en pixel */
+    font-family: 'PoliceDesTitres', sans-serif; /* on join la police d'écriture au titre */
+}
+.registerBox{
+    margin-left: 32%;/*place les touche a 32% de l'écran*/
+    width : 35%;/* modifie la longeur de barres*/
+    padding: 1%;/* modifie la largeur des barres*/
+}
+
+button{
+    margin-left: 42.5%;
+    background-color: #e7af28;
+    box-sizing: border-box;
+    resize: none;
+    padding: 3%;
+    color : #FFF /* Modifie la couleur du texte qui se trouve dans le boutton*/
+
+
+
+}
+
+input{
+    border: 0.5rem solid #0f042e; /*ajoute une bordure (une espace de 9px)*/
+    display: flex; /*utilise le modèle Flexbox pour organiser les éléments enfants de cet élément de manière flexible*/
+    flex-direction: column; /*pour placer chaque barre l'une sous l'autre*/
+    background-color: #3c3564; /*définit la couleur de fond de chaque barre*/
+    width: 100%; /*définit la largeur des barres à 100% de la largeur de la box (sont conteneur parent)*/
+    padding: 5%; /*ajoute un espace à l'interieur des barres (autour du contenu donc le texte de la barre et la bordure de la barre*/
+    color: #888;/* Modifie la couleur du texte qui se trouve dans les barres*/
+
+}
+.registerBox{
+    width: 35%;
+    flex-direction: column;
+    margin-left: 34.5%;
+    margin: 30px auto;
+
+
+}
+
+@media (max-width: 600px) {
+    .registerBox{
+        width: 50%;
+        margin: 30px auto;
+        padding-right: 50px;
+    }
+    .list{
+        width: 50%;
+
+    }
+    .footer-section{
+        margin-left: 30%;
+    }
+    button{
+        flex-direction: column-reverse;
+        width: 50%;
+        padding: 2%;
+
+    }
+    input {
+        width: 110%;
+        flex-direction: column;
+    }
+
+}
+
+
+
+

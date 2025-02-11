@@ -1,0 +1,108 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8380\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 INSERT INTO Game (name) VALUES ('Power Of Memory');\
+\
+\
+INSERT INTO `user` (email, password, username) VALUES \
+('user1@example.com', '5e884898da28047151d0e56f8dc6292773603d0d6aabbddbd924ff7e8e4b3e0b', 'UserOne'),\
+('user2@example.com', '5e884898da28047151d0e56f8dc6292773603d0d6aabbddbd924ff7e8e4b3e0b', 'UserTwo'),\
+('user3@example.com', '5e884898da28047151d0e56f8dc6292773603d0d6aabbddbd924ff7e8e4b3e0b', 'UserThree'),\
+('user4@example.com', '5e884898da28047151d0e56f8dc6292773603d0d6aabbddbd924ff7e8e4b3e0b', 'UserFour'),\
+('user5@example.com', '5e884898da28047151d0e56f8dc6292773603d0d6aabbddbd924ff7e8e4b3e0b', 'UserFive');\
+\
+\
+INSERT INTO Score (player_id, game_id, difficulty, score_game) VALUES \
+(1, 1, 'Easy', 1200),\
+(1, 1, 'Medium', 1500),\
+(1, 1, 'Hard', 2000),\
+(1, 1, 'Easy', 1300),\
+(1, 1, 'Medium', 1600);\
+\
+\
+INSERT INTO Score (player_id, game_id, difficulty, score_game) VALUES \
+(2, 1, 'Easy', 1100),\
+(2, 1, 'Medium', 1550),\
+(2, 1, 'Hard', 1950),\
+(2, 1, 'Easy', 1250),\
+(2, 1, 'Medium', 1650);\
+\
+\
+INSERT INTO Score (player_id, game_id, difficulty, score_game) VALUES \
+(3, 1, 'Easy', 1000),\
+(3, 1, 'Medium', 1450),\
+(3, 1, 'Hard', 1800),\
+(3, 1, 'Easy', 1350),\
+(3, 1, 'Medium', 1500);\
+\
+\
+INSERT INTO Score (player_id, game_id, difficulty, score_game) VALUES \
+(4, 1, 'Easy', 900),\
+(4, 1, 'Medium', 1400),\
+(4, 1, 'Hard', 1700),\
+(4, 1, 'Easy', 1250),\
+(4, 1, 'Medium', 1550);\
+\
+\
+INSERT INTO Score (player_id, game_id, difficulty, score_game) VALUES \
+(5, 1, 'Easy', 950),\
+(5, 1, 'Medium', 1350),\
+(5, 1, 'Hard', 1650),\
+(5, 1, 'Easy', 1150),\
+(5, 1, 'Medium', 1450);\
+\
+\
+INSERT INTO Message (game_id, sender_id, receiver_id, content, is_read) VALUES\
+(1, 1, 2, 'Great game!', false),\
+(1, 1, 2, 'Enjoyed this round!', false),\
+(1, 1, 2, 'Let\'92s go again!', false),\
+(1, 2, 2, 'Nice score!', false),\
+(1, 2, 2, 'Almost beat my record.', false),\
+(1, 2, 2, 'Anyone want to play?', false),\
+(1, 3, 2, 'This is addictive!', false),\
+(1, 3, 2, 'I like the hard mode.', false),\
+(1, 3, 2, 'Trying for a new high score!', false),\
+(1, 4, 2, 'Good game everyone!', false),\
+(1, 4, 2, 'Just finished a great round!', false),\
+(1, 4, 2, 'Who else is playing?', false),\
+(1, 5, 2, 'New favorite game!', false),\
+(1, 5, 2, 'Can\'92t stop playing!', false),\
+(1, 5, 2, 'Just got a new high score!', false),\
+(1, 1, 2, 'Did anyone beat 2000 yet?', false),\
+(1, 2, 2, 'Back again for more!', false),\
+(1, 3, 2, 'Let\'92s go!', false),\
+(1, 4, 2, 'Game on!', false),\
+(1, 5, 2, 'Loving this game!', false),\
+(1, 1, 2, 'Who else likes hard mode?', false),\
+(1, 2, 2, 'Trying for the top score!', false),\
+(1, 3, 2, 'Need to practice more!', false),\
+(1, 4, 2, 'This round is tough!', false),\
+(1, 5, 2, 'Going for 1700+ points!', false);\
+\
+INSERT INTO message_priver (id_sender, id_receiver, contenu_message, date_heure_envoi) VALUES\
+('Alice', 'Bob', 'Salut Bob!', '2024-10-01 10:00:00'),\
+('Bob', 'Alice', 'Salut Alice!', '2024-10-01 10:05:00'),\
+('Alice', 'David', 'Bonjour David!', '2024-10-02 11:00:00'),\
+('David', 'Alice', 'Bonjour Alice!', '2024-10-02 11:15:00'),\
+('Bob', 'David', 'Comment \'e7a va?', '2024-10-03 12:00:00'),\
+('David', 'Bob', '\'c7a va bien, merci!', '2024-10-03 12:05:00'),\
+('Alice', 'Eve', 'Hey Eve!', '2024-10-04 09:00:00'),\
+('Eve', 'Alice', 'Salut Alice!', '2024-10-04 09:10:00'),\
+('Bob', 'Eve', 'Comment se passe ta journ\'e9e?', '2024-10-05 14:00:00'),\
+('Eve', 'Bob', 'Tout va bien, merci!', '2024-10-05 14:20:00'),\
+('Alice', 'Bob', 'As-tu vu le nouveau film?', '2024-10-06 19:00:00'),\
+('Bob', 'Alice', 'Oui, c \'e9tait g\'e9nial!', '2024-10-06 19:30:00'),\
+('David', 'Eve', 'On se voit ce weekend', '2024-10-07 16:00:00'),\
+('Eve', 'David', 'Oui, avec plaisir!', '2024-10-07 16:15:00'),\
+('Alice', 'David', 'Pret pour la r\'e9union?', '2024-10-08 08:00:00'),\
+('David', 'Alice', 'Oui, je suis pr\'eat!', '2024-10-08 08:05:00'),\
+('Bob', 'Alice', 'Quoi de neuf?', '2024-10-09 13:00:00'),\
+('Alice', 'Bob', 'Pas grand-chose!', '2024-10-09 13:10:00'),\
+('David', 'Eve', 'On se retrouve o\'f9?', '2024-10-10 17:00:00'),\
+('Eve', 'David', 'Au caf\'e9 habituel!', '2024-10-10 17:05:00');\
+\
+}
